@@ -15,3 +15,31 @@ container.appendChild(content); // append the new div as a child of container
     </body>
 
 */
+
+// Exercise:
+
+const redText = document.createElement("p");
+const blueHeading = document.createElement("h3");
+const pinkDiv = document.createElement("div");
+const imDiv = document.createElement("h1");
+const meToo = document.createElement("p");
+
+redText.textContent = "Hey I'm red!";
+redText.style.color = "red";
+
+blueHeading.textContent = "I'm a blue h3!";
+blueHeading.style.color = "blue";
+
+pinkDiv.setAttribute(
+  "style",
+  "border: 1px solid black; background-color: pink;"
+);
+
+imDiv.textContent = "I'm in a div";
+meToo.textContent = "ME TOO!";
+
+pinkDiv.appendChild(imDiv);
+pinkDiv.appendChild(meToo);
+container.appendChild(redText);
+container.appendChild(blueHeading);
+container.appendChild(pinkDiv);
